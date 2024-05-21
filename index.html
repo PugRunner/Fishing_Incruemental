@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Quest: Idle Fishing Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            cursor: pointer; /* Add cursor pointer */
+            border-radius: 5px; /* Add border radius */
+            margin: 5px; /* Add margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="game-container">
+            <h1>Fish Quest: Idle Fishing Adventure</h1>
+            <img id="pugFishingImage" src="pug-fishing.jpg" alt="Pug Fishing">
+            <button id="catchFishButton">Catch Fish</button>
+            <button id="sellAllButton">Sell All Fish</button>
+            <div id="money">Money: $0</div>
+            <div id="upgrades">
+                <h2>Upgrades</h2>
+                <button id="upgradeRodButton">Upgrade Rod ($25)</button>
+                <button id="upgradeBaitButton">Upgrade Bait ($50)</button>
+                <button id="buyPugButton">Buy Pug ($75)</button> <!-- Add this line -->
+                <button id="upgradeCatchButton">Upgrade Catch ($150)</button> <!-- Add this line -->
+                <button id="levelUpButton">Level Up ($100)</button>
+            </div>
+        </div>
+        <div class="inventory-container">
+            <h2>Fish Inventory</h2>
+            <div id="totalWorth">Total Worth: $0</div> <!-- Add this line -->
+            <ul id="inventoryList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
